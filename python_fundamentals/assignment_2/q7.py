@@ -1,5 +1,3 @@
-
-
 while True:
     user = input("enter the number : ")
     if user == "Quit":
