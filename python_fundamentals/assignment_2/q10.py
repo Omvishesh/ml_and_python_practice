@@ -1,15 +1,17 @@
 guess_no = 46
 
 number = int(input("enter the number : "))
+while True:
+    if number == guess_no:
+        print("Correct!")
+        break
+    elif number < guess_no:
+        print("Too low")
+        number = int(input("enter the number : "))
 
-if number == guess_no:
-    print("Correct!")
-
-elif number < guess_no:
-    print("Too low")
-
-else:
-    print("Too high")
+    else:
+        print("Too high")
+        number = int(input("enter the number : "))
 
 
 
